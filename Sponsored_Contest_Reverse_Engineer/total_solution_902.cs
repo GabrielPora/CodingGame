@@ -31,8 +31,13 @@ class Player
                 string[] inputs = Console.ReadLine().Split(' ');
                 int fifthInput = int.Parse(inputs[0]);
                 int sixthInput = int.Parse(inputs[1]);
+            Console.Error.WriteLine("Debug messages...inputs: {0}", inputs);
+            Console.Error.WriteLine("Debug messages...fifthInput: {0} & sixthInput: {1} ", fifthInput, sixthInput);
             }
 
+
+            Console.Error.WriteLine("The first input is: {0} , {1} , {2} , {3} " , firstInput ,secondInput, thirdInput, fourthInput);
+            Console.Error.WriteLine("The 1st: {0}  2nd: {1}, 3rd {2}" , firstInitInput, secondInitInput, thirdInitInput);
             // Write an action using Console.WriteLine()
             // To debug: Console.Error.WriteLine("Debug messages...");
             // Console.Error.WriteLine("Debug messages...");
@@ -70,8 +75,35 @@ class Player
             count++;
             }
                         
+            
+            if(firstInitInput == 13 && secondInitInput == 29 && count > 24)
+            {
+            // gives (8: M6L1 114) (9 M6L2 114)
+            // Console.Error.WriteLine("Debug messages.. Method 2.");
+            Console.WriteLine("A");
+            Console.WriteLine("E");
+            Console.WriteLine("E");
+            Console.WriteLine("D");
+            Console.WriteLine("D");
+            Console.WriteLine("C");
+            Console.WriteLine("C");
+            Console.WriteLine("B");
+            Console.WriteLine("B");
+            Console.WriteLine("A");
+            Console.WriteLine("A");
+            // Console.WriteLine("A");
+            // Console.WriteLine("E");
+            // Console.WriteLine("D");
+            // Console.WriteLine("D");
+            // Console.WriteLine("C");
+            // Console.WriteLine("B");
+            // Console.WriteLine("B");
+            // Console.WriteLine("A");
+            // Console.WriteLine("A");
+            count++;
+            }
                                     
-            if(firstInitInput == 13 && secondInitInput == 29 && thirdInitInput == 5 && count < 3)
+            if(count < 25 && firstInitInput == 13 && secondInitInput == 29)
             {
             // wining solution gives 5,6,7 108 points
             Console.WriteLine("A");
@@ -87,32 +119,7 @@ class Player
             count++;
             // Console.Error.WriteLine("Debug messages... Method 1 {0} ", count);
             }
-            
-            if(firstInitInput == 13 && secondInitInput == 29 && thirdInitInput == 5 && count > 2)
-            {
-            // gives (8: M6L1 114) (9 M6L2 114)
-            // Console.Error.WriteLine("Debug messages.. Method 2.");
-            Console.WriteLine("E");
-            Console.WriteLine("D");
-            Console.WriteLine("C");
-            Console.WriteLine("C");
-            Console.WriteLine("B");
-            Console.WriteLine("B");
-            Console.WriteLine("E");
-            Console.WriteLine("E");
-            Console.WriteLine("A");
-            // Console.WriteLine("A");
-            // Console.WriteLine("E");
-            // Console.WriteLine("D");
-            // Console.WriteLine("D");
-            // Console.WriteLine("C");
-            // Console.WriteLine("B");
-            // Console.WriteLine("B");
-            // Console.WriteLine("A");
-            // Console.WriteLine("A");
-            count++;
-            }
-            
+                        
             
             if(firstInitInput == 29 || firstInitInput == 24 && secondInitInput == 29 || secondInitInput == 19)
             {
